@@ -1,5 +1,4 @@
 :root{
-    
     --primary: #1173d4;
     --primary-dark: #0a3d66;
     --primary-hover: #0d5ba8;
@@ -16,6 +15,12 @@
     --input-bg: #1e293b;
     --hsla-example: hsla(210,100%,56%,1);
 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -46,6 +51,10 @@ header {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
+
+    svg {
+        width: 50px;
+    }
 
     h2 {
         font-size: 1.25rem;
