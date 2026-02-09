@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Midudev - Empleos</title>
+    <meta name="description" content="Bootcamp de Midu Dev para armar un portfolio mas completo">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000">
+    <link rel="icon" type="image/jpg" href="./images/faticon.jpg">
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-code"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>
+
+            <h2>DevJobs</h2>
+        </div>
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="" class="active" target="_blank">Empleo</a>
+            <a href="" target="_blank">Empresas</a>
+            <a href="" target="_blank">Salarios</a>
+        </nav>
+        <div class="header-buttons">
+            <a href="http://">Publicar un Empleo</a>
+            <a href="http://">Iniciar Sesion</a>
+        </div>
+    </header>
+    <main class="jobs-container">
+        <section>
+            <div class="info-section">
+                <h1>Encuentra tu próximo trabajo</h1>
+                <p>Explora miles de oportunidades de trabajo para desarrolladores</p>
+                <form role="search">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
+                        <input type="text" placeholder="Buscar empleos por título, habilidad o empresa">
+                        </input>
+                    </div>
+                </form>
+                <div class="options-search">
+                    <select name="tipo-contrato" id="tipo-contrato">
+                        <option value="remoto">Remoto</option>
+                        <option value="presencial">Presencial</option>
+                        <option value="híbrido">Híbrido</option>
+                    </select>
+                    <select name="categoria" id="categoria">
+                        <option value="remoto">Tecnologia</option>
+                        <option value="presencial">Marketing</option>
+                        <option value="híbrido">Finanzas</option>
+                        <option value="híbrido">Salud</option>
+                        <option value="híbrido">Servicios</option>
+                        <option value="híbrido">Otros</option>
+                    </select>
+                    <select name="ubicacion" id="ubicacion">
+                        <option value="argentina">Argentina</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="peru">Peru</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="venezuela">Venezuela</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="jobs-results">
+            <header><h2>Resultados de la búsqueda</h2></header>
+            <footer>
+                <article class="article">
+                    <div>
+                        <h2>Ingeniero de Software</h2>
+                        <span>Empresa X - Remoto</span>
+                        <p>Buscamos un Ingeniero de Software con experiencia en desarrollo de software. Tareas principales:  Desarrollar software, mantener software, probar software.</p>
+                    </div>
+                    <button>Aplicar</button>
+                </article>
+                <article class="article">
+                    <div>
+                        <h2>Ingeniero de Software</h2>
+                        <span>Empresa X - Remoto</span>
+                        <p>Buscamos un Ingeniero de Software con experiencia en desarrollo de software. Tareas principales:  Desarrollar software, mantener software, probar software.</p>
+                    </div>
+                    <button>Aplicar</button>
+                </article>
+                <article class="article">   
+                    <div>
+                        <h2>Ingeniero de Software</h2>
+                        <span>Empresa X - Remoto</span>
+                        <p>Buscamos un Ingeniero de Software con experiencia en desarrollo de software.</p>
+                    </div>
+                    <button>Aplicar</button>
+                </article>
+            </footer>
+            <nav class="pagination">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
+                <a class="is-active">1</a>
+                <a>2</a>
+                <a>3</a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 6l6 6l-6 6" /></svg>
+            </nav>
+        </section>
+    </main>
+    <footer>
+        <small>&copy; 2025 DevJobs. Todos los derechos reservados.</small>
+    </footer>
+</body>
+</html>
