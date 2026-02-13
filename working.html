@@ -11,6 +11,7 @@
     <meta name="theme-color" content="#000">
     <link rel="icon" type="image/jpg" href="./images/faticon.jpg">
     <link rel="stylesheet" href="./css/styles.css">
+    <script type="module" src="./js/script.js"></script>
     
 </head>
 <body>
@@ -71,32 +72,32 @@
 
         <section class="jobs-results">
             <header><h2>Resultados de la búsqueda</h2></header>
-            <footer>
-                <article class="article">
+            <div class="jobs-container">
+                <article class="article jobs-listing-card">
                     <div>
                         <h2>Ingeniero de Software</h2>
                         <span>Empresa X - Remoto</span>
                         <p>Buscamos un Ingeniero de Software con experiencia en desarrollo de software. Tareas principales:  Desarrollar software, mantener software, probar software.</p>
                     </div>
-                    <button>Aplicar</button>
+                    <button class="btn-applied-job">Aplicar</button>
                 </article>
-                <article class="article">
+                <article class="article jobs-listing-card">
                     <div>
                         <h2>Ingeniero de Software</h2>
                         <span>Empresa X - Remoto</span>
                         <p>Buscamos un Ingeniero de Software con experiencia en desarrollo de software. Tareas principales:  Desarrollar software, mantener software, probar software.</p>
                     </div>
-                    <button>Aplicar</button>
+                    <button class="btn-applied-job" >Aplicar</button>
                 </article>
-                <article class="article">   
+                <article class="article jobs-listing-card">   
                     <div>
                         <h2>Ingeniero de Software</h2>
                         <span>Empresa X - Remoto</span>
                         <p>Buscamos un Ingeniero de Software con experiencia en desarrollo de software.</p>
                     </div>
-                    <button>Aplicar</button>
+                    <button class="btn-applied-job">Aplicar</button>
                 </article>
-            </footer>
+             </div>
             <nav class="pagination">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg>
                 <a class="is-active">1</a>

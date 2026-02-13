@@ -423,3 +423,25 @@ footer {
         font-size: .8rem;
     }
 }
+
+#apply-button {
+    background-color: var(--primary-light);
+    color: white;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all .2s;
+    &:hover {
+        background-color: var(--primary-hover);
+        outline: 2px solid white;
+        outline-offset: 2px;
+    }
+}
+
+.btn-applied-job {
+    &.is-applied {
+        background-color: #4caf50;
+        pointer-events: none;
+    }
+}
