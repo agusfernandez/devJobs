@@ -24,6 +24,7 @@ btnWorking.forEach(button => {
 
 Forma correcta de Aplicacion 
 
+### Event "onClick"
 
 ´´´
 const jobsContainer = document.querySelector('.jobs-container');
@@ -41,3 +42,15 @@ jobsContainer.addEventListener('click', (e) => {
 })
 
 ´´´
+
+### Event "onChange"
+
+´´´
+const filterOption = document.querySelector('#filter-tecnology')
+
+filterOption.addEventListener('change', ()=> {
+    console.log('filter', filterOption.value);
+})
+´´´
+
+

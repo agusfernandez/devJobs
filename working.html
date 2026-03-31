@@ -37,36 +37,39 @@
             <div class="info-section">
                 <h1>Encuentra tu próximo trabajo</h1>
                 <p>Explora miles de oportunidades de trabajo para desarrolladores</p>
-                <form role="search">
-                    <div>
+                <form role="search" id="searchForm" name="searchForm">
+                    <div class="searchBar">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-search"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
-                        <input type="text" placeholder="Buscar empleos por título, habilidad o empresa">
+                        <input id="empleos-search-input" type="text" placeholder="Buscar empleos por título, habilidad o empresa">
                         </input>
                     </div>
+                        <div class="options-search">
+                            <select name="tipo-contrato" id="filter-contract" class="filter-section">
+                                <option value="remoto">Remoto</option>
+                                <option value="presencial">Presencial</option>
+                                <option value="híbrido">Híbrido</option>
+                            </select>
+                            <select name="categoria" id="filter-tecnology">
+                                <option value="remoto">Tecnologia</option>
+                                <option value="presencial">Marketing</option>
+                                <option value="híbrido">Finanzas</option>
+                                <option value="híbrido">Salud</option>
+                                <option value="híbrido">Servicios</option>
+                                <option value="híbrido">Otros</option>
+                            </select>
+                            <select name="ubicacion" id="filter-location">
+                                <option value="argentina">Argentina</option>
+                                <option value="chile">Chile</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="peru">Peru</option>
+                                <option value="uruguay">Uruguay</option>
+                                <option value="venezuela">Venezuela</option>
+                            </select>
+                        </div>
                 </form>
-                <div class="options-search">
-                    <select name="tipo-contrato" id="tipo-contrato">
-                        <option value="remoto">Remoto</option>
-                        <option value="presencial">Presencial</option>
-                        <option value="híbrido">Híbrido</option>
-                    </select>
-                    <select name="categoria" id="categoria">
-                        <option value="remoto">Tecnologia</option>
-                        <option value="presencial">Marketing</option>
-                        <option value="híbrido">Finanzas</option>
-                        <option value="híbrido">Salud</option>
-                        <option value="híbrido">Servicios</option>
-                        <option value="híbrido">Otros</option>
-                    </select>
-                    <select name="ubicacion" id="ubicacion">
-                        <option value="argentina">Argentina</option>
-                        <option value="chile">Chile</option>
-                        <option value="colombia">Colombia</option>
-                        <option value="peru">Peru</option>
-                        <option value="uruguay">Uruguay</option>
-                        <option value="venezuela">Venezuela</option>
-                    </select>
-                </div>
+            
+              
+                <pan id="message-filter" class="messageFilter"></pan>
             </div>
         </section>
 
@@ -77,6 +80,7 @@
                     <div>
                         <h2>Ingeniero de Software</h2>
                         <span>Empresa X - Remoto</span>
+                        <span class="job-location">Argentina</span>
                         <p>Buscamos un Ingeniero de Software con experiencia en desarrollo de software. Tareas principales:  Desarrollar software, mantener software, probar software.</p>
                     </div>
                     <button class="btn-applied-job">Aplicar</button>
@@ -85,6 +89,7 @@
                     <div>
                         <h2>Ingeniero de Software</h2>
                         <span>Empresa X - Remoto</span>
+                        <span class="job-location">Argentina</span>
                         <p>Buscamos un Ingeniero de Software con experiencia en desarrollo de software. Tareas principales:  Desarrollar software, mantener software, probar software.</p>
                     </div>
                     <button class="btn-applied-job" >Aplicar</button>
@@ -93,7 +98,8 @@
                     <div>
                         <h2>Ingeniero de Software</h2>
                         <span>Empresa X - Remoto</span>
-                        <p>Buscamos un Ingeniero de Software con experiencia en desarrollo de software.</p>
+                        <span class="job-location">Venezuela</span>
+                        <p>Buscamos un Ingeniero de Software co n experiencia en desarrollo de software.</p>
                     </div>
                     <button class="btn-applied-job">Aplicar</button>
                 </article>
