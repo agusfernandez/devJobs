@@ -278,6 +278,7 @@ main {
 /* Jobs */
 
  .jobs-container {
+    margin-top: 2rem;
         .info-section {
                 display: flex;
                 flex-direction: column;
@@ -378,6 +379,13 @@ main {
             outline-offset: 2px;
         }
     }
+ }
+
+ .message-noresult {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
  }
 
 /* Features */

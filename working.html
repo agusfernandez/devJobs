@@ -45,19 +45,22 @@
                     </div>
                         <div class="options-search">
                             <select name="tipo-contrato" id="filter-contract" class="filter-section">
+                                <option value="">Todos</option>
                                 <option value="remoto">Remoto</option>
                                 <option value="presencial">Presencial</option>
                                 <option value="híbrido">Híbrido</option>
                             </select>
-                            <select name="categoria" id="filter-tecnology">
-                                <option value="remoto">Tecnologia</option>
-                                <option value="presencial">Marketing</option>
-                                <option value="híbrido">Finanzas</option>
-                                <option value="híbrido">Salud</option>
-                                <option value="híbrido">Servicios</option>
-                                <option value="híbrido">Otros</option>
+                            <select name="categoria" id="filter-tecnology" class="filter-section">
+                                <option value="">Todos</option>
+                                <option value="tecnologia">Tecnologia</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="finanzas">Finanzas</option>
+                                <option value="salud">Salud</option>
+                                <option value="servicios">Servicios</option>
+                                <option value="otros">Otros</option>
                             </select>
-                            <select name="ubicacion" id="filter-location">
+                            <select name="ubicacion" id="filter-location" class="filter-section">
+                                <option value="">Todos</option>
                                 <option value="argentina">Argentina</option>
                                 <option value="chile">Chile</option>
                                 <option value="colombia">Colombia</option>
@@ -75,8 +78,9 @@
 
         <section class="jobs-results">
             <header><h2>Resultados de la búsqueda</h2></header>
+            <div class="message-noresult"></div>
             <div class="jobs-container">
-                <article class="article jobs-listing-card">
+                <article data-modalidad="remoto" data-categoria="tecnologia" data-ubicacion="argentina" class="article jobs-listing-card">
                     <div>
                         <h2>Ingeniero de Software</h2>
                         <span>Empresa X - Remoto</span>
@@ -85,7 +89,7 @@
                     </div>
                     <button class="btn-applied-job">Aplicar</button>
                 </article>
-                <article class="article jobs-listing-card">
+                <article data-modalidad="remoto" data-categoria="tecnologia" data-ubicacion="argentina" class="article jobs-listing-card">
                     <div>
                         <h2>Ingeniero de Software</h2>
                         <span>Empresa X - Remoto</span>
@@ -94,10 +98,10 @@
                     </div>
                     <button class="btn-applied-job" >Aplicar</button>
                 </article>
-                <article class="article jobs-listing-card">   
+                <article data-modalidad="híbrido" data-categoria="marketing" data-ubicacion="venezuela" class="article jobs-listing-card">   
                     <div>
                         <h2>Ingeniero de Software</h2>
-                        <span>Empresa X - Remoto</span>
+                        <span>Empresa X - Híbrido</span>
                         <span class="job-location">Venezuela</span>
                         <p>Buscamos un Ingeniero de Software co n experiencia en desarrollo de software.</p>
                     </div>
